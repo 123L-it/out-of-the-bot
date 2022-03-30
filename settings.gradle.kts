@@ -1,1 +1,1 @@
-rootProject.name = "com.123-l.out-of-the-bot"
+rootProject.name = "com.vit123long.out-of-the-bot"

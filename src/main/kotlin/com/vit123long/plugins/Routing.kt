@@ -1,4 +1,4 @@
-package com.123-l.plugins
+package com.vit123long.plugins
 
 import io.ktor.server.routing.*
 import io.ktor.http.*

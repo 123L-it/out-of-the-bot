@@ -1,4 +1,4 @@
-package com.123-l
+package com.vit123long
 
 import io.ktor.server.routing.*
 import io.ktor.http.*
@@ -7,7 +7,7 @@ import io.ktor.server.response.*
 import io.ktor.server.request.*
 import kotlin.test.*
 import io.ktor.server.testing.*
-import com.123-l.plugins.*
+import com.vit123long.plugins.*
 
 class ApplicationTest {
 }

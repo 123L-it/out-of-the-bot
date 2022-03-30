@@ -7,10 +7,10 @@ plugins {
     kotlin("jvm") version "1.6.10"
 }
 
-group = "com.123-l"
+group = "com.123_long"
 version = "0.0.1"
 application {
-    mainClass.set("com.123-l.ApplicationKt")
+    mainClass.set("com.vit123long.ApplicationKt")
 
     val isDevelopment: Boolean = project.ext.has("development")
     applicationDefaultJvmArgs = listOf("-Dio.ktor.development=$isDevelopment")

@@ -1,0 +1,1 @@
+rootProject.name = "com.123-l.out-of-the-bot"

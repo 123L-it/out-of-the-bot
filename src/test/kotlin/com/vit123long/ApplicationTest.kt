@@ -1,13 +1,22 @@
 package com.vit123long
 
-import io.ktor.server.routing.*
-import io.ktor.http.*
-import io.ktor.server.application.*
-import io.ktor.server.response.*
-import io.ktor.server.request.*
-import kotlin.test.*
-import io.ktor.server.testing.*
-import com.vit123long.plugins.*
+import com.vit123long.plugins.configureRouting
+import io.ktor.client.request.get
+import io.ktor.client.statement.bodyAsText
+import io.ktor.http.HttpStatusCode
+import io.ktor.server.testing.testApplication
+import org.junit.Test
+import kotlin.test.assertEquals
 
 class ApplicationTest {
+    @Test
+    fun testApp() = testApplication {
+        application {
+            configureRouting()
+        }
+        var response = client.get("/")
+
+        assertEquals(HttpStatusCode.OK, response.status)
+        assertEquals("Out of the box!", response.bodyAsText())
+    }
 }

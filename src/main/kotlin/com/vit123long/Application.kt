@@ -1,10 +1,9 @@
 package com.vit123long
 
 import com.vit123long.models.GithubBot
-import com.vit123long.models.enum.CommandAvailable
-import io.ktor.server.engine.*
-import io.ktor.server.netty.*
-import com.vit123long.plugins.*
+import com.vit123long.plugins.configureRouting
+import io.ktor.server.engine.embeddedServer
+import io.ktor.server.netty.Netty
 
 fun main() {
     embeddedServer(Netty, port = 8080, host = "0.0.0.0") {
@@ -13,7 +12,7 @@ fun main() {
     }.start(wait = true)
 }
 
-fun exampleInitCommand(){
+fun exampleInitCommand() {
     val bot = GithubBot()
     bot.setupPublishCommand()
 }

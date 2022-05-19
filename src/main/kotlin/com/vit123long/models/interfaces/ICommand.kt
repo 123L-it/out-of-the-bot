@@ -1,7 +1,5 @@
 package com.vit123long.models.interfaces
 
-import com.vit123long.models.enum.CommandAvailable
-
 interface ICommand {
     /**
      * Configure the specific command
